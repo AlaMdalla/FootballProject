@@ -1,0 +1,72 @@
+/*news titlr*/
+
+.divzs {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.divzs h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #e41824; /* Red color */
+    border-bottom: 2px solid #e41824; /* Red line under the heading */
+    padding-bottom: 10px; /* Add some space between the heading and the line */
+}
+
+
+.homepage-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px; /* Add padding */
+}
+
+.item {
+    position: relative;
+}
+
+.item img, .item video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    filter: grayscale(50%); /* Add grayscale effect to images */
+    transition: filter 0.3s ease; /* Add transition effect */
+}
+
+.item:hover img, .item:hover video {
+    filter: grayscale(0%); /* Remove grayscale effect on hover */
+}
+
+.item .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(175, 175, 175, 0.5);
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+}
+
+.item .description h3 {
+    margin-bottom: 5px;
+}
+
+.item .description p {
+    margin: 0;
+}
+
+/* Football-themed styles */
+.homepage-section {
+    background-color: #ffffff; /* Light background color */
+}
+
+.item {
+    overflow: hidden; /* Hide overflowing content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.item:hover {
+    transform: translateY(-5px); /* Move item up on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add stronger shadow effect */
+}
